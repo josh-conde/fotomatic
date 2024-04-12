@@ -59,7 +59,7 @@ header .logo {
   margin-left: 30px;
   color: #4A4A4A;
   font-size: 24px;
-  font-family: "Roboto-Mono-Regular", Arial, sans-serif;
+  font-family: "Roboto Mono", sans-serif;
 }
 
 header nav ul {
@@ -257,7 +257,8 @@ header .mobile {
 
 .image-container img {
   max-width: 100%;
-  display: block;
+  display:block; 
+  
 
 }
 .feature h2 {
@@ -332,12 +333,6 @@ header .mobile {
   display: flex; 
 }
 
-.image-container img {
-  display: block;
-  max-width: 100%; 
-  overflow: hidden;
-}
-
 @media only screen and (max-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
@@ -374,11 +369,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -387,7 +382,11 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+.quote-citation {
+  padding-left: 30px; 
+}
+
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
@@ -396,12 +395,12 @@ header .mobile {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -413,12 +412,13 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+
 }
 
 footer .content {
   color: white;
   display: flex;
-  font-size: .75rem;
+  font-size: .75rem; 
 }
 
 footer .copyright {
